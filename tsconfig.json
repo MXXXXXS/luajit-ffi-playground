@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "esModuleInterop": true,
+    "jsx": "react",
+    "target": "ESNext",
+    "allowUmdGlobalAccess": true,
+    "outDir": "build",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "strict": true,
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "checkJs": false,
+    // https://www.typescriptlang.org/docs/handbook/babel-with-typescript.html#type-checking-and-dts-file-generation
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "isolatedModules": true,
+    "plugins": [],
+    "baseUrl": ".",
+    "paths": {
+      "~/*": [
+        "src/node/*"
+      ]
+    }
+  },
+  "include": [
+    "cmake/**/*.ts",
+  ],
+  "exclude": [
+    "node_modules",
+    ".vscode"
+  ],
+  "ts-node": {
+    // Do not forget to `npm i -D tsconfig-paths`
+    "require": [
+      "tsconfig-paths/register"
+    ]
+  }
+}

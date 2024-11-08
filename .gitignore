@@ -1,0 +1,85 @@
+# Created by https://www.toptal.com/developers/gitignore/api/cmake,cuda
+# Edit at https://www.toptal.com/developers/gitignore?templates=cmake,cuda
+
+### CMake ###
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Testing
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps
+
+### CMake Patch ###
+# External projects
+*-prefix/
+
+### CUDA ###
+*.i
+*.ii
+*.gpu
+*.ptx
+*.cubin
+*.fatbin
+
+# End of https://www.toptal.com/developers/gitignore/api/cmake,cuda
+
+# yarn https://stackoverflow.com/a/60184331
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Jupyter Lab
+.lab/
+
+# Python virtual environment
+venv/
+env/
+.venv/
+.venv3/
+.venv36/
+.venv37/
+.venv38/
+.venv39/
+env/
+ENV/
+
+# Python bytecode
+__pycache__/
+*.pyc
+
+# Logs
+*.log
+
+# Other
+.DS_Store1~
+
+test*.json
+test*.csv
+test*.txt
+
+build
+
+node_modules
+
+cmake/setSources.cmake
+
+.vscode
+.VSCodeCounter
+
+*.log
+
+
+vcpkg_installed/
